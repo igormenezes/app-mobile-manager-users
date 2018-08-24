@@ -16,9 +16,11 @@ Caso, queira testar como se estivesse em um celular, recomendo o ripple emulator
 
 Backend:
 
-- No arquivo .env configurar com as informações do seu banco de dados.
-
 - composer install (vai instalar todas as dependências).
+
+- cp .env.example .env (criar uma cópia do arquivo .env.example e no arquivo .env configurar com as informações do seu banco de dados).
+
+- php artisan key:generate (para gerar uma chave para o arquivo .env)
 
 - php artisan migrate  (isso irá gerar todas as tabelas necessárias).
 
