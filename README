@@ -1,0 +1,25 @@
+Instruções:
+
+Dentro da pasta App:
+
+Frontend - HTML e Javascript do frontend da aplicação mobile, feito com Phoengap/Cordova, banco de dados WebSQL para os testes no navegador, onde armazena o token de autenticação.
+
+Backend - API onde realiza autenticação do usuário, cadastro de novos, obtem todos os usuários e exclui o usuário selecionado. Foi feito com PHP/Laravel, base de dados MySQL.
+
+Executando o servidor para rodar o frontend, no terminal digite:
+
+- cordova platform add android@6.30 (instalar platform android para poder realizar testes)
+
+- phonegap serve
+
+Caso, queira testar como se estivesse em um celular, recomendo o ripple emulator
+
+Backend:
+
+- No arquivo .env configurar com as informações do seu banco de dados.
+
+- composer install (vai instalar todas as dependências).
+
+- php artisan migrate  (isso irá gerar todas as tabelas necessárias).
+
+- php artisan serve (irá rodar o servidor localhost:8000).
